@@ -16,8 +16,20 @@ body {
     padding: 50px 50px;
     display: none;
     animation-fill-mode: forwards;
-
 }
+
+.paper::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.stamp {
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+
 
 @keyframes slideIn {
     from {

@@ -6,9 +6,8 @@ body {
 
 .main {
     width: 1000px;
-    height: 623px;
-    margin-left: 200px;
 }
+
 
 .paper {
     background-color: #ffffff;
@@ -30,6 +29,14 @@ body {
     float: right;
 }
 
+@media (min-width: 768px) {
+    .test {
+        display: flex;
+        justify-content: space-between; /* or flex-end */
+        align-items: center; /* vertical alignment */
+        gap: 10px;
+    }
+}
 
 @keyframes slideIn {
     from {
@@ -69,6 +76,11 @@ p {
     z-index: 1000; /* Keeps it above other content */
     background-color: black;
     color: white;
+}
+
+
+.navbar.show {
+  transform: translateX(0);
 }
 
 /* 6D04AA */
